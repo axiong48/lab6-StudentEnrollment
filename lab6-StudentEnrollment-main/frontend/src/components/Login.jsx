@@ -36,6 +36,7 @@ function LoginPage({ onLogin }) {
           <p>Student: cnorris / password</p>
           <p>Student: mindy / password</p>
           <p>Teacher: ahepworth / password</p>
+          <p>Admin: admin / admin123</p>
         </div>
       </div>
     </div>

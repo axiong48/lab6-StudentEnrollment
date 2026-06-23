@@ -1,7 +1,7 @@
 function CoursesTable({
   courses,
   showAddButton,
-  studentCourses,
+  studentCourseIds = [],
   onAddCourse,
   teacherMode,
   onSelectCourse,
@@ -27,14 +27,16 @@ function CoursesTable({
                   className="courseLink"
                   onClick={() => onSelectCourse(course)}
                 >
-                  {course.courseName}
+                  {/* db.json uses "name", not "courseName" */}
+                  {course.name}
                 </button>
               ) : (
-                course.courseName
+                course.name
               )}
             </td>
 
-            <td>{course.teacher}</td>
+            {/* db.json uses "teacherName", not "teacher" */}
+            <td>{course.teacherName}</td>
             <td>{course.time}</td>
             <td>
               {course.enrolled}/{course.capacity}
@@ -42,7 +44,7 @@ function CoursesTable({
 
             {showAddButton && (
               <td>
-                {studentCourses.includes(course.id) ||
+                {studentCourseIds.includes(course.id) ||
                 course.enrolled >= course.capacity ? (
                   <span className="minus">—</span>
                 ) : (

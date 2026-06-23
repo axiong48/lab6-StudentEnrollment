@@ -1,0 +1,103 @@
+{
+  "users": [
+    {
+      "id": "10",
+      "username": "admin",
+      "password": "admin123",
+      "name": "University Admin",
+      "role": "admin"
+    },
+    {
+      "username": "samh",
+      "password": "pw",
+      "name": "SamH",
+      "role": "student",
+      "id": "sDewbRQ0AIk"
+    },
+    {
+      "username": "ahemp",
+      "password": "pw",
+      "name": "Ammond",
+      "role": "teacher",
+      "id": "EY_lYIy18wc"
+    },
+    {
+      "username": "zg",
+      "password": "pw",
+      "name": "zach",
+      "role": "student",
+      "id": "4B9NBqa2WDU"
+    },
+    {
+      "username": "na",
+      "password": "pw",
+      "name": "nat",
+      "role": "student",
+      "id": "BtRVaObVMtY"
+    },
+    {
+      "username": "ee",
+      "password": "pw",
+      "name": "eitan",
+      "role": "student",
+      "id": "ECBqi3-C1dE"
+    },
+    {
+      "username": "az",
+      "password": "pw",
+      "name": "aaron",
+      "role": "student",
+      "id": "_pkX960rWIE"
+    },
+    {
+      "username": "eg",
+      "password": "pw",
+      "name": "eduardo",
+      "role": "student",
+      "id": "CqxFAVabYlI"
+    }
+  ],
+  "courses": [
+    {
+      "name": "CSE108",
+      "teacherId": "EY_lYIy18wc\t",
+      "teacherName": "Ammond Hempworth",
+      "time": "MWF 10-12",
+      "capacity": "5",
+      "id": "QQxlbVcyEso"
+    }
+  ],
+  "enrollments": [
+    {
+      "studentId": "sDewbRQ0AIk",
+      "courseId": "QQxlbVcyEso",
+      "grade": null,
+      "id": "bOS0DQYZOhM"
+    },
+    {
+      "studentId": "ECBqi3-C1dE",
+      "courseId": "QQxlbVcyEso",
+      "grade": null,
+      "id": "goe6JyBnR_A"
+    },
+    {
+      "studentId": "BtRVaObVMtY",
+      "courseId": "QQxlbVcyEso",
+      "grade": null,
+      "id": "3ySTyYtYd1A"
+    },
+    {
+      "studentId": "4B9NBqa2WDU",
+      "courseId": "QQxlbVcyEso",
+      "grade": null,
+      "id": "lYLNpFyVcq4"
+    },
+    {
+      "studentId": "_pkX960rWIE",
+      "courseId": "QQxlbVcyEso",
+      "grade": null,
+      "id": "vIGFnxOD4cM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
